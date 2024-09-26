@@ -20,21 +20,32 @@ const Home = () => {
       >
         <div className=" flex flex-wrap justify-center  md:h-screen w-full md:w-[80%]">
           <div className=" flex flex-wrap justify-between h-full w-full m-1 ">
+         
+         {/* profile picture section for  Mobile  screen  */}
+
+          <div className="md:hidden   flex  flex-wrap justify-center  w-full    max-h-auto ">
+              <img
+                src={Profile}
+                alt="dp"
+                className="profile-image mt-[1.5rem] relative z-1 "
+              />
+            </div>
+         
             {/* Intro Text section  */}
 
             <div className="w-full md:w-[65%] flex flex-wrap mx-1 px-3">
-              <div className="flex flex-col ml-5  pl-3  w-full md:max-w-[50rem] mt-10 md:mt-[6rem] overflow-hidden relative">
-                <div className="flex items-center">
-                  <h1 className=" text-[2rem] md:text-[3.5rem] font-bold text-gray-800 mx-1 md:mx-3 md:max-h-[11rem]  m-0">
+              <div className="flex flex-col md:ml-5  md:pl-3  w-full md:max-w-[50rem] mt-10 md:mt-[6rem] overflow-hidden relative">
+                <div className="flex justify-center md:justify-normal items-center">
+                  <h1 className=" text-center md:text-left text-[2.1rem] md:text-[3.5rem] font-bold text-gray-800 mx-1 md:mx-3 md:max-h-[11rem]  m-0">
                     Full-Stack Javascript Developer
                   </h1>
                   <img
                     src={Hello}
                     alt="hand Icon ."
-                    className=" absolute  md:h-[4rem] w-[3rem] md:w-[4rem] ml-3 left-[10rem] md:left-[18rem] top-[3rem] md:top-[6.3rem]"
+                    className=" absolute  md:h-[4rem] w-[3rem] md:w-[4rem] ml-3 left-[16rem] md:left-[18rem] top-[3rem] md:top-[6.3rem]"
                   />
                 </div>
-                <p className="m-0 p-2 md:text-xl text-slate-700 w-full md:max-w-[30rem] ">
+                <p className="m-0 p-2 md:text-xl text-slate-700 w-full md:max-w-[30rem] text-center lg:text-left  md:text ">
                   Hi, I'm <span className="font-bold">Arkajyoti Kundu</span> . A
                   passionate  Full-Stack Javascrip Developer based in Kolkata , India.
                   📍
@@ -42,7 +53,7 @@ const Home = () => {
                              
                                    {/* contact icon list   */}
 
-                <div className=" flex flex-wrap p-3 gap-y-3 gap-x-7 my-5">
+                <div className=" flex flex-wrap p-3 gap-y-3 gap-x-7 my-5 justify-center md:justify-normal">
                   <a
                     href="https://www.linkedin.com/in/arkajyoti-kundu-784264242/"
                     target="_blank"
@@ -66,7 +77,7 @@ const Home = () => {
               </div>
             </div>
 
-            {/* profile picture section for   */}
+            {/* profile picture section for  DeskTop screen  */}
 
             <div className=" hidden   md:flex  flex-wrap   w-[34%]    max-h-auto ">
               <img

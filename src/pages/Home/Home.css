@@ -26,3 +26,11 @@
     }
   }
   
+ /* Media query for mobile screens */
+@media (max-width: 768px) {
+  .profile-image {
+    height: 15rem; 
+    width: 15rem; 
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
