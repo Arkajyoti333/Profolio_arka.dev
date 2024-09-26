@@ -87,10 +87,13 @@ const NavBar = () => {
 
           {/* mobile menu bar */}
 
-          <div className="flex flex-wrap justify-center p-1 lg:hidden ">
-            <Button onClick={handleToggle}>
-              <IoMenuOutline className="text-3xl  transition-transform duration-300 ease-in-out hover:translate-x-2.5 " />
-            </Button>
+          <div className="flex flex-wrap items-center justify-center p-1 lg:hidden ">
+          
+              <IoMenuOutline
+               className="text-3xl  transition-transform duration-300 ease-in-out hover:translate-x-2.5 "
+               onClick={handleToggle}
+               />
+            
           </div>
         </nav>
 
