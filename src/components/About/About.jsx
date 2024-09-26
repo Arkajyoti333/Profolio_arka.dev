@@ -3,10 +3,10 @@ const About = () => {
       <>
         <div
           id="/about"
-          className=" border-4 border-yellow-500 m-3 flex flex-wrap justify-center items-center min-h-screen"
-        >
-          <p>Welcome to About page</p>
-        </div>
+          className=" text-3xl text-red-700 font-semibold m-3 border-4 border-green-500 flex flex-wrap  justify-center items-center min-h-screen"
+          >
+            <p>About Page is under devlopment </p>
+          </div>
       </>
     );
   };

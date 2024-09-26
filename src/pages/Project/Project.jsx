@@ -3,9 +3,9 @@ const Project = () => {
       <>
         <div
           id="/project"
-          className="m-3 border-4 border-green-500 flex flex-wrap justify-center items-center min-h-screen"
+          className=" text-3xl text-red-700 font-semibold m-3 border-4 border-green-500 flex flex-wrap  justify-center items-center min-h-screen"
         >
-          <p>Welcome to Project page </p>
+          <p>Project Page is under devlopment </p>
         </div>
       </>
     );

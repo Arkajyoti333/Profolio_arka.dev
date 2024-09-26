@@ -1,13 +1,18 @@
-import bg from "../../assets/pall_pic.jpeg";
-import Hello from "../../assets/hii_img.png";
-import { CiLinkedin } from "react-icons/ci";
-// import { RiLinkedinBoxLine } from "react-icons/ri";
-import { FiGithub } from "react-icons/fi";
-import { MdOutlineMailLock } from "react-icons/md";
-import "./Home.css";
+import { useState } from "react";
 import { Link } from "react-scroll";
+import { MdOutlineMailLock } from "react-icons/md";
+import { FiGithub } from "react-icons/fi";
+import "./Home.css";
+// import { RiLinkedinBoxLine } from "react-icons/ri";
+import { CiLinkedin } from "react-icons/ci";
+import Profile from "../../assets/Arka.jpg";
+import Hello from "../../assets/hii_img.png";
+
 
 const Home = () => {
+
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <>
       <div
@@ -26,7 +31,7 @@ const Home = () => {
                   </h1>
                   <img
                     src={Hello}
-                    alt="hand"
+                    alt="hand Icon ."
                     className=" absolute h-[4rem] w-[4rem] ml-3 left-[18rem] top-[6.3rem]"
                   />
                 </div>
@@ -66,7 +71,7 @@ const Home = () => {
 
             <div className="flex  flex-wrap   w-[34%]    max-h-auto ">
               <img
-                src={bg}
+                src={Profile}
                 alt="dp"
                 className="profile-image mt-[5rem] relative z-1 "
               />
@@ -114,6 +119,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        
       </div>
     </>
   );

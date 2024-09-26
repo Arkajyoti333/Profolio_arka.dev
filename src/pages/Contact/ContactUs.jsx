@@ -3,10 +3,10 @@ const ContactUs = () => {
       <>
         <div
           id="/contact"
-          className="m-3 border-4 border-blue-500 flex flex-wrap justify-center items-center min-h-screen"
-        >
-          <p>Welcome to Contac tUs page</p>
-        </div>
+          className=" text-3xl text-red-700 font-semibold m-3 border-4 border-green-500 flex flex-wrap  justify-center items-center min-h-screen"
+          >
+            <p>Contact Page is under devlopment </p>
+          </div>
       </>
     );
   };
