@@ -2,10 +2,13 @@
   "name": "arka-protfolio",
   "private": true,
   "version": "0.0.0",
+  "homepage":"https://Arkajyoti333.github.io/Profolio_arka.dev",
   "type": "module",
   "scripts": {
     "dev": "vite ",
     "start": "vite ",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
