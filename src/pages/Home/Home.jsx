@@ -11,7 +11,6 @@ import Hello from "../../assets/hii_img.png";
 
 const Home = () => {
 
-  const [showMenu, setShowMenu] = useState(false);
 
   return (
     <>
@@ -19,23 +18,23 @@ const Home = () => {
         id="/home"
         className=" mt-[5.5rem] borde flex flex-wrap justify-center items-center min-h-auto bg-gray-100"
       >
-        <div className=" flex flex-wrap justify-center  h-screen w-[80%]">
+        <div className=" flex flex-wrap justify-center  md:h-screen w-full md:w-[80%]">
           <div className=" flex flex-wrap justify-between h-full w-full m-1 ">
             {/* Intro Text section  */}
 
-            <div className="w-[65%] flex flex-wrap mx-1 px-3">
-              <div className="flex flex-col ml-5  pl-3  max-w-[50rem] mt-[6rem] overflow-hidden relative">
+            <div className="w-full md:w-[65%] flex flex-wrap mx-1 px-3">
+              <div className="flex flex-col ml-5  pl-3  w-full md:max-w-[50rem] mt-10 md:mt-[6rem] overflow-hidden relative">
                 <div className="flex items-center">
-                  <h1 className="text-[3.5rem] font-bold text-gray-800 mx-3 max-h-[11rem]  m-0">
+                  <h1 className=" text-[2rem] md:text-[3.5rem] font-bold text-gray-800 mx-1 md:mx-3 md:max-h-[11rem]  m-0">
                     Full-Stack Javascript Developer
                   </h1>
                   <img
                     src={Hello}
                     alt="hand Icon ."
-                    className=" absolute h-[4rem] w-[4rem] ml-3 left-[18rem] top-[6.3rem]"
+                    className=" absolute  md:h-[4rem] w-[3rem] md:w-[4rem] ml-3 left-[10rem] md:left-[18rem] top-[3rem] md:top-[6.3rem]"
                   />
                 </div>
-                <p className="m-0 p-2 text-xl text-slate-700 max-w-[30rem] ">
+                <p className="m-0 p-2 md:text-xl text-slate-700 w-full md:max-w-[30rem] ">
                   Hi, I'm <span className="font-bold">Arkajyoti Kundu</span> . A
                   passionate  Full-Stack Javascrip Developer based in Kolkata , India.
                   📍
@@ -67,9 +66,9 @@ const Home = () => {
               </div>
             </div>
 
-            {/* profile picture section  */}
+            {/* profile picture section for   */}
 
-            <div className="flex  flex-wrap   w-[34%]    max-h-auto ">
+            <div className=" hidden   md:flex  flex-wrap   w-[34%]    max-h-auto ">
               <img
                 src={Profile}
                 alt="dp"
@@ -81,15 +80,15 @@ const Home = () => {
                               
                               {/* this is Tech stack section  */}
 
-        <div className="absolute  -bottom-3   flex flex-wrap   w-full p-1 ">
-          <div className="flex flex-wrap  w-[80%] items-center p-1 ml-[11rem]">
+        <div className="md:absolute  md:-bottom-3   flex flex-wrap   w-full p-1 ">
+          <div className="flex flex-wrap  md:w-[80%] justify-center md:justify-normal items-center p-1 md:ml-[11rem]  ">
             <span className="flex  justify-center  hover:text-red-600 cursor-pointer">
-              <p className="text-xl font-bold  transition-transform duration-300 ease-in-out hover:-translate-y-2.5 ">
-                Tech stack <span className="mx-3 font-mono text-3xl">|</span>
+              <p className="text-lg md:text-xl font-bold  transition-transform duration-300 ease-in-out hover:-translate-y-2.5 ">
+                Tech stack <span className="mx-2 md:mx-3 font-mono text-xl md:text-3xl">|</span>
               </p>
             </span>
-            <div className="flex flex-wrap flex-row  p-1  mx-3 px-3 w-[80%] ">
-              <ul className="flex flex-wrap flex-row px-1 gap-x-4 mx-3 my-1">
+            <div className="flex flex-wrap flex-row justify-center p-1 mx-auto my-3 md:my-1 md:mx-3 px-3 w-full md:w-[80%]  ">
+              <ul className="flex flex-wrap flex-row justify-center px-1 gap-4 md:gap-x-4 mx-auto md:mx-3 my-1">
                 <li className="mx-1 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2.5">
                   <Link>
                     <img src="https://skillicons.dev/icons?i=c,cpp" />

@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="flex flex-wrap bg-transparent  mx-3 p-1 w-auto h-auto border-b-2 rounded-md border-gray-300  text-gray-700 shadow-md  z-10 fixed top-0 left-0 right-0 bg-white">
+      <div className="flex flex-wrap bg-transparent  mx-3 p-1 w-auto h-auto border-b-2 rounded-md border-gray-300  text-gray-700 shadow-md  z-10 fixed top-0 left-0 right-0 bg-white md:bg-transparent">
         <nav className=" flex flex-wrap justify-between flex-row w-full   mx-5 my-1 p-1 text-lg  ">
           {/* logo  */}
           <Link
