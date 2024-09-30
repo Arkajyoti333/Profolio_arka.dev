@@ -4,6 +4,7 @@ import Home from './pages/Home/Home.jsx'
 import Project from './pages/Project/Project.jsx'
 import Resume from './pages/Resume/Skill.jsx'
 import ContactUs from './pages/Contact/ContactUs.jsx'
+import Footer from './components/Footer/Footer.jsx'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
        <Resume/>
        <Project/>
        <ContactUs/>
+       <Footer/>
       </div>
 
     </>
