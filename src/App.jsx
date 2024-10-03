@@ -2,7 +2,7 @@ import About from './components/About/About.jsx'
 import NavBar from './components/NavBar/NavBar.jsx'
 import Home from './pages/Home/Home.jsx'
 import Project from './pages/Project/Project.jsx'
-import Resume from './pages/Resume/Skill.jsx'
+import Resume from './pages/Resume/Resume.jsx'
 import ContactUs from './pages/Contact/ContactUs.jsx'
 import Footer from './components/Footer/Footer.jsx'
 
