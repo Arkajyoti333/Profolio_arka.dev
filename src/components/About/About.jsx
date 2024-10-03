@@ -43,9 +43,9 @@ const About = () => {
             </h1>
           </div>
 
-          <div className="flex flex-wrap justify-end  items-end  overflow-hidden rounded-md md:w-[40%] ml-5">
+          <div className="flex flex-wrap justify-center  items-end   overflow-hidden rounded-md md:w-[40%] ml-5">
             <video
-              className=" hidden md:flex h-[20rem] w-[24rem] object-cover rounded-lg border-2 shadow-md ml-3 bottom-0"
+              className=" hidden md:flex h-[20rem] w-[24rem] object-cover rounded-lg border-2 shadow-md ml-3 "
               autoPlay
               muted
               loop
