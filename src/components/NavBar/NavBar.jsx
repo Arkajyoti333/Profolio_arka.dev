@@ -2,12 +2,22 @@ import { Button, Link } from "react-scroll";
 import { IoMenuOutline } from "react-icons/io5";
 import "./NavBar.css";
 import { useState } from "react";
+import { motion } from "framer-motion"
+import { GiCrossMark } from "react-icons/gi";
+
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "-100%" },
+}
+
+
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const handleToggle = (e) => {
+    // e 
     setIsOpen(!isOpen);
-    console.log(isOpen);
+    // console.log(isOpen);
   };
 
   return (
@@ -90,10 +100,16 @@ const NavBar = () => {
           <div className="flex flex-wrap items-center justify-center p-1 lg:hidden ">
           
               <IoMenuOutline
-               className="text-3xl  transition-transform duration-300 ease-in-out hover:translate-x-2.5 "
+               className={` ${!isOpen?"block":"hidden"} text-3xl  transition-transform duration-300 ease-in-out hover:translate-x-2.5 `}
                onClick={handleToggle}
                />
-            
+               <GiCrossMark
+                className={`${isOpen?"block":"hidden"} text-3xl  transition-transform duration-300 ease-in-out hover:translate-x-2.5 `}
+                onClick={handleToggle}
+                 />
+                
+                 {/* <Toggle onClick={handleToggle} /> */}
+          
           </div>
         </nav>
 
@@ -103,9 +119,14 @@ const NavBar = () => {
            className={`${isOpen?"block":"hidden"}
            lg:hidden w-full flex items-center justify-center py-4 shadow-lg bg-transparent  z-50
            `
-        
           }
         >
+              <motion.nav
+      animate={isOpen ? "open" : "closed"}
+      variants={variants}
+    >
+     
+     {/* <Toggle onClick={handleToggle} /> */}
           <ul className=" flex flex-wrap flex-col justify-center items-center  gap-4 font-bold py-1">
             <li className="cursor-pointer  hover:text-green-600">
               <Link
@@ -173,6 +194,7 @@ const NavBar = () => {
               </Link>
             </li>
           </ul>
+          </motion.nav>
 
         </div>
       </div>
