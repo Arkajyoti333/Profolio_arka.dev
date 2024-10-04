@@ -1,6 +1,7 @@
 // React
 import { motion } from "framer-motion";
 
+
 const Resume = () => {
   return (
     <>
@@ -13,9 +14,9 @@ const Resume = () => {
           whileTap={{ scale: 1.1 }}
           drag="x"
           dragConstraints={{ left: -100, right: 100 }}
-          className="bg-blue-500 p-4 rounded-md cursor-pointer"
+          className="bg-blue-100 p-4 rounded-md cursor-pointer"
         >
-          Drag or Hover Me!
+          Clik see my Resume!
         </motion.div>
       </div>
     </>

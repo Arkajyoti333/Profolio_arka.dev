@@ -20,6 +20,7 @@ function App() {
           className="fixed top-[5.4rem] left-0 right-0  mx-3 h-[5px] bg-blue-600 origin-left rounded-md"
           style={{ scaleX: scrollYProgress }}
         />
+        
 
         {/* Page Content */}
         <NavBar />
