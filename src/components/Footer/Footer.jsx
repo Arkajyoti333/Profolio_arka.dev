@@ -11,7 +11,7 @@ const Footer=()=>{
 
     return (
         <>
-        <div  className="flex flex-wrap justify-center bg-[#2D2E32]   text-white  border-2 shrink-0 rounded ml-3 bottom-0 ">
+        <div  className="flex flex-wrap justify-center bg-[#2D2E32]   text-white  border-2 shrink-0 rounded  bottom-0 ">
             <div className="flex flex-wrap mt-5 w-[80%] flex-col justify-center   ">
             <div className="flex flex-wrap  justify-center mt-5 ">
                 <ul className="flex flex-wrp w-auto justify-row items-center  p-3 gap-x-10 text-[28px] mt-3">
