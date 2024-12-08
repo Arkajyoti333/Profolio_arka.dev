@@ -1,5 +1,5 @@
 // React
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 
 const Resume = () => {
@@ -7,9 +7,21 @@ const Resume = () => {
     <>
       <div
         id="/resume"
-        className="text-3xl text-red-700 font-semibold m-3 border-4 border-green-500 flex flex-wrap justify-center items-center min-h-screen"
+        className="bg_image text-3xl text-red-700 font-semibold m-3 border-4 border-green-500 flex flex-wrap justify-center items-center min-h-screen"
       >
         <div>
+
+
+        </div>
+       
+      </div>
+    </>
+  );
+};
+
+export default Resume;
+
+
 {/* 
         <motion.div
           whileHover={{ scale: 1.2 }}
@@ -20,12 +32,3 @@ const Resume = () => {
         > */}
     
         {/* </motion.div> */}
-
-        </div>
-       
-      </div>
-    </>
-  );
-};
-
-export default Resume;
