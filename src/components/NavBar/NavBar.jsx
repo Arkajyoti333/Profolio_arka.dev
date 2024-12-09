@@ -75,6 +75,18 @@ const NavBar = () => {
                 Resume
               </Link>
             </li>
+            <li className="cursor-pointer mx-1 hover:text-cyan-500">
+              <Link
+                to="/profile"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                activeClass="active"
+              >
+                Profile
+              </Link>
+            </li>
             <li className="cursor-pointer mx-1 hover:text-yellow-500">
               <Link
                 to="/project"

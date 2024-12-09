@@ -1,3 +1,8 @@
 .bg_image{
-    
+    background-image: url('../../assets/Genarate/bgImage.webp'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    opacity: 50;
 }

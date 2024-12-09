@@ -35,33 +35,34 @@ import { GraduationCap, TestTube2 } from 'lucide-react'
 
   const experienceItems = [
     {
-      year: "2022-Present",
-      title: "Meta",
-      details: ["Senior Research Scientist, AI Speech"]
+      year: "2022",
+      title: " ",
+      details: [" "]
     },
     {
       year: "2020-2022",
-      title: "Meta",
-      details: ["Research Scientist, AI Speech", "Meta Reality Lab"],
-      location: "Location: Menlo Park, USA"
+      title: "",
+      details: [" "],
+      location: " "
     },
     {
       year: "2019",
-      title: "Alibaba Group",
-      details: ["Research Intern"],
-      mentors: "Mentors: Feifei Li, Tieying Zhang, Hong Wu",
-      location: "Location: Sunnyvale, USA"
+      title: " ",
+      details: [" "],
+      mentors: " ",
+      location: "Location: "
     },
     {
       year: "2018",
-      title: "Facebook",
-      details: ["Summer Research Intern"]
+      title: "",
+      details: [""]
     }
   ]
 
   return (
-    <div className="container mx-auto p-4 max-w-full ">
-      <div className="grid md:grid-cols-2 gap-8 max-w-6xl  p-3 mx-auto ">
+    <section id='/profile' className='border'>
+    <div className="container mx-auto p-4 max-w-full bg-gray-50 flex justify-end ">
+      <div className="grid md:grid-cols-2 gap-10 max-w-6xl  p-3  mr-0">
         {/* Academic Section */}
         <div className=' ' >
           <div className="flex items-center gap-2 mb-6">
@@ -126,7 +127,8 @@ import { GraduationCap, TestTube2 } from 'lucide-react'
         </div>
       </div>
     </div>
-  )
+    </section>
+  );
 }
 
 export default Profile;
