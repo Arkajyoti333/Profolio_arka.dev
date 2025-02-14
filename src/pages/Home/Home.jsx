@@ -42,7 +42,7 @@ const Home = () => {
                   <img
                     src={Hello}
                     alt="hand Icon ."
-                    className=" absolute  md:h-[4rem] w-[3rem] md:w-[4rem] ml-3 left-[17rem] md:left-[18rem] top-[3rem] md:top-[6.3rem]"
+                    className=" absolute  md:h-[4rem] w-[3rem] md:w-[4rem] ml-3 left-[16rem] md:left-[18rem] top-[3rem] md:top-[6.3rem]"
                   />
                 </div>
                 <p className="m-0 p-2 md:text-xl text-slate-700 w-full md:max-w-[30rem] text-center lg:text-left  md:text ">
