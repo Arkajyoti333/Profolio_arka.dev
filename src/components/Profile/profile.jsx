@@ -35,7 +35,7 @@ import { GraduationCap, TestTube2 } from 'lucide-react'
 
   const experienceItems = [
     {
-      "year": "2024-present",
+      "year": "2024 - Present",
       "title": "Full Stack Developer",
       "details": [
         "Developed and maintained full-stack web applications using React.js, Express.js, and Node.js.",

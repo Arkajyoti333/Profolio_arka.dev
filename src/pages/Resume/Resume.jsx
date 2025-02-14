@@ -13,7 +13,7 @@ const Resume = () => {
       >
         <div className="flex flex-col gap-10 justify-center items-center text-white bg-transparent   shadow-md  min-h-full w-full">
           <h1 className="text-4xl mb-5">Resume</h1>
-          <a href="https://drive.google.com/file/d/1d99KidRh0rQqKItn4SSgsUDkxQyZRpFK/view?usp=sharing" target="_blanck" ><FaRegFileCode className="text-6xl  text-[#FB923D]"  /></a>
+          <a href="https://drive.google.com/file/d/1d99KidRh0rQqKItn4SSgsUDkxQyZRpFK/view?usp=sharing" target="_blanck" ><FaRegFileCode className="text-6xl  text-[#B6834A]"  /></a>
         </div>
       </div>
     </>

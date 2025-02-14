@@ -1,6 +1,7 @@
-import VideoSource from "../../assets/video/AboutVideo.mp4";
+// import VideoSource from "../../assets/video/AboutVideo.mp4";
 import AboutImg from "../../assets/AboutPic.jpg";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
+import Card from "../Card/card";
 
 
 const About = () => {
@@ -43,15 +44,10 @@ const About = () => {
             </h1>
           </div>
      
-          <div className="flex flex-wrap justify-center  items-end   overflow-hidden rounded-md md:w-[40%] ml-5">
-          <motion.div
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 1.1 }}
-          drag="x"
-          dragConstraints={{ left: -100, right: 100 }}
-          className="p-4 rounded-md cursor-pointer"
-        >
-            <video
+          <div className="flex flex-wrap justify-center  items-center  rounded-md md:w-[40%] ml-5">
+        <div>
+          <Card/>
+            {/* <video
               className=" hidden md:flex h-[20rem] w-[24rem] object-cover rounded-lg border-2 shadow-md ml-3 "
               autoPlay
               muted
@@ -59,8 +55,8 @@ const About = () => {
             >
               <source src={VideoSource} type="video/mp4" />
               Your browser does not support the video tag.
-            </video>
-          </motion.div>
+            </video> */}
+        </div>
           </div>
         </div>
       </div>
