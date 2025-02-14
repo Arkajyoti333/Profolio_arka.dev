@@ -24,6 +24,7 @@ function App() {
         
 
         {/* Page Content */}
+        
         <NavBar />
         <Home />
         <About />

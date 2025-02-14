@@ -10,7 +10,7 @@ const Resume = () => {
         id="/resume"
         className="bg_image mt-[5.3rem] text-3xl flex flex-wrap justify-center items-center  h-[350px] text-red-700 font-semibold m-3 border-4 border-green-500 "
       >
-        <div className=" text-yellow-500  min-h-full w-full">
+        <div className=" text-slate-900 bg-transparent bg-opacity-10  backdrop-blur-md shadow-md  min-h-full w-full">
  
     I am Arkajyoti Kundu
         </div>
