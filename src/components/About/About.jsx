@@ -24,7 +24,7 @@ const About = () => {
               ABOUT ME
             </h2>
             <h1 className="relative w-full  flex items-center mx-3 text-3xl font-bold mt-2 mb-2">
-              Full-Stack Javascript Developer based in kolkata
+              Full-Stack (MERN) Developer based in kolkata
               <h3 className="text-xl absolute mt-[4.8rem] right-[11rem] md:mt-9 md:right-[14rem]">
                 📍
               </h3>

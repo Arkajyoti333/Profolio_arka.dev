@@ -37,17 +37,17 @@ const Home = () => {
               <div className="flex flex-col md:ml-5  md:pl-3  w-full md:max-w-[50rem] mt-10 md:mt-[6rem] overflow-hidden relative">
                 <div className="flex justify-center md:justify-normal items-center">
                   <h1 className=" text-center md:text-left text-[2.1rem] md:text-[3.5rem] font-bold text-gray-800 mx-1 md:mx-3 md:max-h-[11rem]  m-0">
-                    Full-Stack Javascript Developer
+                    Full-Stack [MERN]  Developer
                   </h1>
                   <img
                     src={Hello}
                     alt="hand Icon ."
-                    className=" absolute  md:h-[4rem] w-[3rem] md:w-[4rem] ml-3 left-[16rem] md:left-[18rem] top-[3rem] md:top-[6.3rem]"
+                    className=" absolute  md:h-[4rem] w-[3rem] md:w-[4rem] ml-3 left-[17rem] md:left-[18rem] top-[3rem] md:top-[6.3rem]"
                   />
                 </div>
                 <p className="m-0 p-2 md:text-xl text-slate-700 w-full md:max-w-[30rem] text-center lg:text-left  md:text ">
                   Hi, I'm <span className="font-bold">Arkajyoti Kundu</span> . A
-                  passionate  Full-Stack Javascrip Developer based in Kolkata , India.
+                  passionate  Full-Stack  Developer based in Kolkata , India.
                   📍
                 </p>
                              

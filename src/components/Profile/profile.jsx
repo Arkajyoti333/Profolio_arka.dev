@@ -35,28 +35,21 @@ import { GraduationCap, TestTube2 } from 'lucide-react'
 
   const experienceItems = [
     {
-      year: "2022",
-      title: " ",
-      details: [" "]
-    },
-    {
-      year: "2020-2022",
-      title: "",
-      details: [" "],
-      location: " "
-    },
-    {
-      year: "2019",
-      title: " ",
-      details: [" "],
-      mentors: " ",
-      location: "Location: "
-    },
-    {
-      year: "2018",
-      title: "",
-      details: [""]
+      "year": "2024-present",
+      "title": "Full Stack Developer",
+      "details": [
+        "Developed and maintained full-stack web applications using React.js, Express.js, and Node.js.",
+        "Built and optimized responsive UIs with Tailwind CSS, ensuring seamless user experiences.",
+        "Integrated RESTful APIs and implemented authentication for secure user access.",
+        "Worked on an OCR-based Information Extractor API using Tesseract.js to process Aadhaar card images.",
+        "Developed a car rental web application ('Paradise Car') with booking functionalities.",
+        "Deployed applications on cloud platforms like DigitalOcean and Render.",
+        "Implemented smooth scrolling navigation and carousel components in React.",
+        "Explored WebSocket for real-time communication in Node.js applications."
+      ]
     }
+    
+   
   ]
 
   return (
