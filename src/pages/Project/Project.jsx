@@ -1,17 +1,24 @@
 import ProjectCard from "../../components/Card/ProjectCard";
+import "../Resume/Resume.css";
+// text-[#B6834A]
 
-
-
-const Project = () => {
+const Project = () => { 
   return (
     <>
       <div
         id="/project"
-        className=" text-3xl text-red-700 font-semibold m-3 border-4 border-green-500 flex flex-wrap  justify-center items-center min-h-screen"
+        className=" text-3xl font-semibold my-3  gap-1  min-h-screen min-w-full"
       >
-        <div>
+        <div className=" bg_image flex justify-center items-center my-3 text-3xl py-5 shadow-lg font-semibold  bg-transparent text-white"  >
+          <h1>Projects</h1>
+        </div>
+        <div className="flex flex-wrap sm:flex-row fex-col my-3  justify-center items-center gap-4">
       
-          <ProjectCard/>
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
        
         </div>
       </div>
