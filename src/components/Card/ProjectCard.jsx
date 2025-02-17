@@ -1,9 +1,19 @@
+import { useState } from "react";
 import { AiOutlineFullscreen } from "react-icons/ai";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
+import Modal from "../Modal/modal";
 // import { SiWikipedia } from "react-icons/si";
 
-const ProjectCard = () => {
-  return (
+const ProjectCard = ({children="Empty Children Value !"}) => {
+    
+  const [open, setopen] = useState(false);
+
+  const handleOpenModal=()=>{
+    setopen(!open)
+    }
+   
+    return (
+      <>
     <div className="relative w-80 h-52 bg-gray-400 rounded-lg overflow-hidden shadow-lg group cursor-pointer ">
       {/* Background Image */}
       <div
@@ -29,12 +39,22 @@ const ProjectCard = () => {
           <a href="#" target="_blank" rel="noopener noreferrer">
             <FiExternalLink className="text-xl hover:text-white transition-all" />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer " >
+          <a  target="_blank" rel="noopener noreferrer " 
+          onClick={handleOpenModal}>
             <AiOutlineFullscreen className="text-xl hover:text-white group-hover:opacity-100 transition-all opacity-0" />
           </a>
         </div>
       </div>
     </div>
+    {/* Modal */}
+    {open && (
+     <div>
+      <Modal isOpen={open} onClose={handleOpenModal}>
+      <div>{children}</div>
+      </Modal>
+     </div>
+    )}
+    </>
   );
 };
 
