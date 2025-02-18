@@ -36,7 +36,8 @@ import { GraduationCap, TestTube2 } from 'lucide-react'
   const experienceItems = [
     {
       "year": "2024 - Present",
-      "title": "Full Stack Developer",
+      "company": "RayVerse",
+      "title": "Full Stack Developer Intern",
       "details": [
         "Developed and maintained full-stack web applications using React.js, Express.js, and Node.js.",
         "Built and optimized responsive UIs with Tailwind CSS, ensuring seamless user experiences.",
@@ -98,11 +99,14 @@ import { GraduationCap, TestTube2 } from 'lucide-react'
                 <div className="absolute -left-[21px] w-4 h-4 bg-orange-400 rounded-full border-4 border-orange-50" />
                 <div className="font-medium">{item.year}</div>
                 <div className="mt-2">
-                  <div className="flex items-center gap-2 text-orange-400">
-                    <div className="w-4 h-4" />
-                    {item.title}
-                  </div>
-                  <ul className="mt-2 space-y-1">
+                    <div className="w-4 h-4 text-orange-400 font-bold gap-2 m-3">
+                      {item.company}
+                    </div>
+                 
+                    <div className="w-4 h-4 text-gray-800 " />
+                 <p className='font-bold'>{item.title}</p>   
+                  
+                  <ul className="mt-2 space-y-1 ">
                     {item.details.map((detail, idx) => (
                       <li key={idx} className="text-gray-600">{detail}</li>
                     ))}
