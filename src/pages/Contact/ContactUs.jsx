@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub, FaPhone, FaEnvelope } from 'react-icons/fa';
 import { MdLocationOn, MdSend } from 'react-icons/md';
+import Tooltip from '../../components/Uicomponents/SocialMediaCard';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -13,14 +14,24 @@ const ContactUs = () => {
 
   const socialLinks = [
     {
-      icon: <FaLinkedin className="text-2xl" />,
+    id:1,
       href: "https://www.linkedin.com/in/arkajyoti-kundu-784264242/",
       text: "LinkedIn"
     },
     {
-      icon: <FaGithub className="text-2xl" />,
+      id:2,
       href: "https://github.com/Arkajyoti333",
       text: "GitHub"
+    },
+    {
+    id:3,
+      href: "https://www.instagram.com/arkajyoti_jr",
+      text: "Instagram"
+    },
+    {
+      id:4,
+      href: "https://www.facebook.com/arkajyoti.kundu.9",
+      text: "Facebook"
     }
   ];
 
@@ -149,20 +160,20 @@ const ContactUs = () => {
             <div className="pt-8 border-t border-gray-200">
               <h4 className="text-xl font-bold mb-6 text-gray-900">Find me on</h4>
               <div className="flex gap-6">
-                {socialLinks.map((link, index) => (
-                  <motion.a
-                    key={index}
+                
+                  {/* <motion.a
+                 
                     whileHover={{ y: -5 }}
                     whileTap={{ scale: 0.9 }}
-                    href={link.href}
+                  
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors duration-300 flex items-center gap-2 text-gray-700"
-                  >
-                    {link.icon}
-                    <span className="hidden sm:inline">{link.text}</span>
-                  </motion.a>
-                ))}
+                  > */}
+                 
+                 <Tooltip socialLinks={socialLinks}/>
+                  {/* </motion.a> */}
+               
               </div>
             </div>
           </motion.div>

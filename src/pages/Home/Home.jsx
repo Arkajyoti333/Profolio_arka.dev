@@ -7,10 +7,16 @@ import "./Home.css";
 import { CiLinkedin } from "react-icons/ci";
 import Profile from "../../assets/Arka.jpg";
 import Hello from "../../assets/hii_img.png";
+import { useState } from "react";
 
 
 const Home = () => {
 
+   const [open, setopen] = useState(false);
+  
+    const handleShow=()=>{
+      setopen(!open)
+    }
 
   return (
     <>
@@ -79,7 +85,7 @@ const Home = () => {
 
             {/* profile picture section for  DeskTop screen  */}
 
-            <div className=" hidden   md:flex  flex-wrap   w-[34%]    max-h-auto ">
+            <div className=" hidden   md:flex  flex-wrap   w-[34%]    max-h-auto cursor-pointer ">
               <img
                 src={Profile}
                 alt="dp"
