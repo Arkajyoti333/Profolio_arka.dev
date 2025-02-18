@@ -136,12 +136,12 @@ const NavBar = () => {
         {/* mobile menu bar */}
         <div
           className={`${isOpen ? "block" : "hidden"}
-           lg:hidden w-full flex items-center justify-center py-4 shadow-lg bg-transparent  z-50
+           lg:hidden w-[95%] min-h-svh flex justify-end py-4 shadow-lg bg-transparent border-r-2 rounded-md  z-50
            `}
         >
           <motion.nav animate={isOpen ? "open" : "closed"} variants={variants}>
             {/* <Toggle onClick={handleToggle} /> */}
-            <ul className=" flex flex-wrap flex-col justify-center items-center  gap-4 font-bold py-1">
+            <ul className=" flex flex-wrap flex-col justify-center gap-4 font-bold py-1 mx-3">
               <li className="cursor-pointer  hover:text-green-600">
                 <Link
                   to="/home"
