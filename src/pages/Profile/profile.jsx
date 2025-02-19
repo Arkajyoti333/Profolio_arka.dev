@@ -1,10 +1,13 @@
 import { GraduationCap, TestTube2 } from 'lucide-react'
-
+import { FaSchoolCircleCheck } from "react-icons/fa6";
+import { IoSchoolSharp } from "react-icons/io5";
+import { MdEngineering } from "react-icons/md";
 
  function Profile() {
   const academicItems = [
     {
       year: "2020-2024",
+      Type: "college",
       subtitle: "Academic Responsibilities",
       title: "B.Tech in Information Technology",
       details: [
@@ -14,6 +17,7 @@ import { GraduationCap, TestTube2 } from 'lucide-react'
     },
     {
       year: "2018-2020",
+      Type: "school",
       title: "Higher Secondary Education",
       subtitle: "Jhargram Banitirtha High School",
       details: [
@@ -23,6 +27,7 @@ import { GraduationCap, TestTube2 } from 'lucide-react'
     },
     {
       year: "2013-2018",
+      Type: "school",
       title: " Secondary Education",
       subtitle: "Ramgarh M.S High School",
       details: [
@@ -76,6 +81,8 @@ import { GraduationCap, TestTube2 } from 'lucide-react'
                 <div className="mt-2">
                   <div className="flex items-center gap-2 text-orange-400">
                     <div className="w-4 h-4" />
+                 {   item.Type=="school" ?  <FaSchoolCircleCheck /> : <IoSchoolSharp />}
+
                     {item.title}
                   </div>
                   {item.subtitle && (
@@ -104,8 +111,8 @@ import { GraduationCap, TestTube2 } from 'lucide-react'
                 <div className="absolute -left-[21px] w-4 h-4 bg-orange-400 rounded-full border-4 border-orange-50" />
                 <div className="font-medium">{item.year}</div>
                 <div className="mt-2">
-                    <div className="w-4 h-4 text-orange-400 font-bold gap-2 m-3">
-                      {item.company}
+                    <div className="w-auto h-4 flex flex-wrap items-center flex-row text-orange-400 font-bold gap-2 m-3">
+                    <MdEngineering />    {item.company}
                     </div>
                  
                     <div className="w-4 h-4 text-gray-800 " />
