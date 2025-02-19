@@ -5,7 +5,7 @@ import Loader from "./components/Loader/Loader.jsx";
 
 const waitPromise = (time) => new Promise((resolve) => setTimeout(resolve, time));
 
-const App = lazy(() => waitPromise(3000).then(() => import("./App.jsx")));
+const App = lazy(() => waitPromise(2100).then(() => import("./App.jsx")));
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

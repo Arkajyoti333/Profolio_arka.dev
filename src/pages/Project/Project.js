@@ -153,7 +153,7 @@ const projectData = [
         }
     },
     {
-        id: 9,
+        id: 10,
         title: "Google Keep Clone",
         description: "A movie streaming web app that fetches data from TMDB API.",
         image: "https://res.cloudinary.com/dnokefb0w/image/upload/v1739953766/Protfolio_Project_Image/ParadiseCar1_rtc29f.jpg", 

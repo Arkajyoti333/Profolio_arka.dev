@@ -18,7 +18,7 @@ function App() {
       <div className="min-h-screen">
        
         <motion.div
-          className="fixed top-[5.4rem] left-0 right-0  mx-3 h-[5px] bg-blue-600 origin-left rounded-md"
+          className="fixed top-[5.4rem] left-0 right-0  mx-3 h-[5px] bg-blue-600 origin-left rounded-md z-30 rounded-sm"
           style={{ scaleX: scrollYProgress }}
         />
         
