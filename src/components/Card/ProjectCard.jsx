@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AiOutlineFullscreen } from "react-icons/ai";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
-import Modal from "../Modal/modal";
+import Modal from "../Modal/Modal.jsx";
 // import { SiWikipedia } from "react-icons/si";
 
 const ProjectCard = ({project}) => {
