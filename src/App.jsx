@@ -6,7 +6,7 @@ import Resume from './pages/Resume/Resume.jsx'
 import ContactUs from './pages/Contact/ContactUs.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import { motion, useScroll } from "framer-motion"
-import Profile from './components/Profile/profile.jsx'
+import Profile from './pages/Profile/profile.jsx'
 
 
 

@@ -55,6 +55,11 @@ import { GraduationCap, TestTube2 } from 'lucide-react'
 
   return (
     <section id='/profile' className='border'>
+      <div className='bg-gray-50 p-5 text-center cursor-pointer mt-5'>
+        <h1 className='text-3xl font-bold text-red-700'>
+          Profile
+        </h1>
+       </div>
     <div className="container mx-auto p-4 max-w-full bg-gray-50 flex justify-end ">
       <div className="grid md:grid-cols-2 gap-10 max-w-6xl  p-3  mr-0">
         {/* Academic Section */}
