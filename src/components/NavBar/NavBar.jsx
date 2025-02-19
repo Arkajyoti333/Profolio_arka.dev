@@ -136,13 +136,13 @@ const NavBar = () => {
         {/* mobile menu bar */}
         <div
           className={`${isOpen ? "block" : "hidden"}
-           lg:hidden w-[95%] min-h-svh flex justify-end py-4 shadow-lg bg-transparent border-r-2 rounded-md  z-50
+           lg:hidden w-[95%] min-h-svh flex justify-start py-4 shadow-lg bg-transparent border-r-2 rounded-md  z-50
            `}
         >
           <motion.nav animate={isOpen ? "open" : "closed"} variants={variants}>
             {/* <Toggle onClick={handleToggle} /> */}
             <ul className=" flex flex-wrap flex-col justify-center gap-4 font-bold py-1 mx-3">
-              <li className="cursor-pointer  hover:text-green-600">
+              <li className="cursor-pointer  hover:text-green-600 ">
                 <Link
                   to="/home"
                   spy={true}
@@ -154,7 +154,9 @@ const NavBar = () => {
                 >
                   Home
                 </Link>
+                
               </li>
+             
               <li className="cursor-pointer mx-1 hover:text-blue-600">
                 <Link
                   to="/about"

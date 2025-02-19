@@ -5,7 +5,7 @@ const Button = ({handleShowMore,extendent,handleShowLess}) => {
   return (
     <StyledWrapper>
       <button onClick={extendent?handleShowMore:handleShowLess} >
-        <b>{extendent?"Show More!":"Show Less!"}</b>
+        <b>{extendent?"Show More...":"Show Less!"}</b>
       </button>
     </StyledWrapper>
   );

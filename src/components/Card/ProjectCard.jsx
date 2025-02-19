@@ -14,7 +14,7 @@ const ProjectCard = ({project}) => {
    
     return (
       <>
-    <div className="relative w-80 h-52 bg-gray-400 rounded-lg overflow-hidden shadow-lg group cursor-pointer border border-black hover:border-blue-500 hover:border-4 transition-all duration-300">
+    <div className="relative w-80 h-52 bg-gray-400 rounded-lg overflow-hidden shadow-lg group cursor-pointer border border-black hover:border-blue-500 hover:border-2 transition-all duration-300">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center opacity-80 group-hover:opacity-100 transition-all duration-300 top-0"
@@ -26,9 +26,9 @@ const ProjectCard = ({project}) => {
 
 
       {/* Content */}
-      <div className="flex justify-between absolute bottom-0 w-full bg-gradient-to-t from-black via-gray/80 to-transparent p-4">
+      <div className="flex justify-between absolute bottom-0 w-full bg-gradient-to-t from-black via-gray/80 to-transparent p-3">
        <div>
-       <h2 className="text-white text-lg font-semibold">{project?.title}</h2>
+       <h2 className="text-gray-300 text-lg font-semibold">{project?.title}</h2>
       
        </div>
 
