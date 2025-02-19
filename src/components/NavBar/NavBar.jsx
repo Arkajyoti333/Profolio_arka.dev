@@ -1,10 +1,10 @@
-import { Button, Link } from "react-scroll";
+import {  Link } from "react-scroll";
 import { IoMenuOutline } from "react-icons/io5";
 import "./NavBar.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { GiCrossMark } from "react-icons/gi";
-
+import Logo from "../../assets/arkadev-high-resolution-logo.png"
 const variants = {
   open: { opacity: 1, x: 0 },
   closed: { opacity: 0, x: "-100%" },
@@ -32,8 +32,11 @@ const NavBar = () => {
           >
             <Link
               to="/home"
-              className=" h-auto p-1 m-3 font-extrabold text-slate-900 text-xl cursor-pointer hover:text-orange-600"
+              className=" h-auto p-1 m-1 flex  font-extrabold text-slate-900 text-xl cursor-pointer hover:text-orange-600"
             >
+              <span className="h-auto w-10 rounded-lg mx-1 ">
+                <img src={Logo} alt="Logo" className="h-8  w-12 rounded-md mx-1" />
+              </span>
               arkajyoti.dev
             </Link>
           </motion.div>
