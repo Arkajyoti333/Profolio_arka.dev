@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
+import Button2 from "../Uicomponents/Button/Button2";
+
 
 const Footer = () => {
   const socialLinks = [
@@ -70,8 +72,11 @@ const Footer = () => {
                 </motion.div>
               </motion.a>
             ))}
+       
           </motion.div>
-
+<div className="flex flex-col items-center space-y-6">
+  <Button2/>
+</div>
           {/* Copyright Text */}
           <motion.p
             variants={itemVariants}

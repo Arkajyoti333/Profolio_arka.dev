@@ -4,6 +4,7 @@ import "./NavBar.css";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { GiCrossMark } from "react-icons/gi";
+import Button3 from "../Uicomponents/Button/Button3";
 // import Logo from "../../assets/arkadev-high-resolution-logo.png"
 const variants = {
   open: { opacity: 1, x: 0 },
@@ -51,7 +52,7 @@ const NavBar = () => {
                 duration={500}
                 activeClass="active"
               >
-                Home
+                <Button3 item="Home"/>
               </Link>
             </li>
             <li className="cursor-pointer mx-1 hover:text-blue-600">
