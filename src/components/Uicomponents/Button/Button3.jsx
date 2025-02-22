@@ -16,7 +16,7 @@ const StyledWrapper = styled.div`
   button {
     // color: #1F2937;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     border: none;
     background: none;
     font-weight: 600;
