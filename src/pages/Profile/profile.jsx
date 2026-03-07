@@ -41,7 +41,7 @@ import { MdEngineering } from "react-icons/md";
   const experienceItems = [
     {
       "year": "2024 - Present",
-      "company": "RayVerse",
+      "company": "Mern - Digital ",
       "title": "Full Stack Developer Intern",
       "details": [
         "Developed and maintained full-stack web applications using React.js, Express.js, and Node.js.",
@@ -139,5 +139,6 @@ import { MdEngineering } from "react-icons/md";
     </section>
   );
 }
+
 
 export default Profile;
