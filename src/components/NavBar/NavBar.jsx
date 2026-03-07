@@ -117,6 +117,9 @@ const NavBar = () => {
             </li>
           </ul>
 
+
+          
+
           {/* mobile menu bar */}
 
           <div className="flex flex-wrap items-center justify-center p-1 lg:hidden ">

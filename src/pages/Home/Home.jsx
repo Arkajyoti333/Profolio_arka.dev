@@ -5,7 +5,7 @@ import { FiGithub } from "react-icons/fi";
 import "./Home.css";
 // import { RiLinkedinBoxLine } from "react-icons/ri";
 import { CiLinkedin } from "react-icons/ci";
-import Profile from "../../assets/Arka.jpg";
+import Profile from "../../assets/Profile/Arka1.jpeg";
 import Hello from "../../assets/hii_img.png";
 import { useState } from "react";
 
