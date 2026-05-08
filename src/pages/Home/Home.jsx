@@ -2,12 +2,14 @@
 import { Link } from "react-scroll";
 import { MdOutlineMailLock } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
-import "./Home.css";
+// import "./Home.css";
 // import { RiLinkedinBoxLine } from "react-icons/ri";
 import { CiLinkedin } from "react-icons/ci";
 import Profile from "../../assets/Profile/Arka1.jpeg";
 import Hello from "../../assets/hii_img.png";
 import { useState } from "react";
+import ProfileImage from "./ProfileImage";
+
 
 
 const Home = () => {
@@ -29,14 +31,10 @@ const Home = () => {
          
          {/* profile picture section for  Mobile  screen  */}
 
-          <div className="md:hidden   flex  flex-wrap justify-center  w-full    max-h-auto ">
-              <img
-                src={Profile}
-                alt="dp"
-                className="profile-image mt-[1.5rem] relative z-1 "
-              />
-            </div>
-         
+          <div className="md:hidden flex  flex-wrap justify-center  w-full    max-h-auto ">
+
+         <ProfileImage/>
+         </div>
             {/* Intro Text section  */}
 
             <div className="w-full md:w-[65%] flex flex-wrap mx-1 px-3">
@@ -84,14 +82,9 @@ const Home = () => {
             </div>
 
             {/* profile picture section for  DeskTop screen  */}
-
-            <div className=" hidden   md:flex  flex-wrap   w-[34%]    max-h-auto cursor-pointer ">
-              <img
-                src={Profile}
-                alt="dp"
-                className="profile-image mt-[5rem] relative z-1 "
-              />
-            </div>
+            <div className=" hidden   md:flex  flex-wrap      min-h-auto cursor-pointer ">
+               <ProfileImage/>
+           </div>
           </div>
         </div>
                               
