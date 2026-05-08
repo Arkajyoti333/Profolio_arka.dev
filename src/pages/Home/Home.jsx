@@ -1,136 +1,91 @@
-// import { useState } from "react";
 import { Link } from "react-scroll";
 import { MdOutlineMailLock } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
-// import "./Home.css";
-// import { RiLinkedinBoxLine } from "react-icons/ri";
 import { CiLinkedin } from "react-icons/ci";
-import Profile from "../../assets/Profile/Arka1.jpeg";
 import Hello from "../../assets/hii_img.png";
-import { useState } from "react";
 import ProfileImage from "./ProfileImage";
 
-
-
 const Home = () => {
-
-   const [open, setopen] = useState(false);
-  
-    const handleShow=()=>{
-      setopen(!open)
-    }
-
   return (
-    <>
-      <div
-        id="/home"
-        className=" mt-[5.5rem] borde flex flex-wrap justify-center items-center min-h-auto bg-gray-100"
-      >
-        <div className=" flex flex-wrap justify-center  md:h-screen w-full md:w-[80%]">
-          <div className=" flex flex-wrap justify-between h-full w-full m-1 ">
-         
-         {/* profile picture section for  Mobile  screen  */}
+    <div
+      id="/home"
+      className="mt-[5.5rem] flex flex-wrap justify-center items-center min-h-auto bg-gray-100"
+    >
+      <div className="flex flex-wrap justify-center md:h-screen w-full md:w-[80%]">
+        <div className="flex flex-col-reverse md:flex-row justify-between items-center h-full w-full m-1">
 
-          <div className="md:hidden flex  flex-wrap justify-center  w-full    max-h-auto ">
+          {/* Intro Text */}
+          <div className="w-full md:w-[60%] flex flex-wrap mx-1 px-3">
+            <div className="flex flex-col md:ml-5 md:pl-3 w-full md:max-w-[50rem] mt-4 md:mt-[6rem] overflow-hidden relative">
+              <div className="flex justify-center md:justify-normal items-center">
+                <h1 className="text-center md:text-left text-[2rem] md:text-[3.5rem] font-bold text-gray-800 mx-1 md:mx-3 md:max-h-[11rem] m-0">
+                  Full-Stack [MERN] Developer
+                </h1>
+                <img
+                  src={Hello}
+                  alt="hand Icon"
+                  className="absolute md:h-[4rem] w-[3rem] md:w-[4rem] ml-3 left-[15rem] md:left-[18rem] top-[2.5rem] md:top-[6.3rem]"
+                />
+              </div>
+              <p className="m-0 p-2 md:text-xl text-slate-700 w-full md:max-w-[30rem] text-center lg:text-left">
+                Hi, I'm <span className="font-bold">Arkajyoti Kundu</span>. A
+                passionate Full-Stack Developer based in Kolkata, India. 📍
+              </p>
 
-         <ProfileImage/>
-         </div>
-            {/* Intro Text section  */}
-
-            <div className="w-full md:w-[65%] flex flex-wrap mx-1 px-3">
-              <div className="flex flex-col md:ml-5  md:pl-3  w-full md:max-w-[50rem] mt-10 md:mt-[6rem] overflow-hidden relative">
-                <div className="flex justify-center md:justify-normal items-center">
-                  <h1 className=" text-center md:text-left text-[2.1rem] md:text-[3.5rem] font-bold text-gray-800 mx-1 md:mx-3 md:max-h-[11rem]  m-0">
-                    Full-Stack [MERN]  Developer
-                  </h1>
-                  <img
-                    src={Hello}
-                    alt="hand Icon ."
-                    className=" absolute  md:h-[4rem] w-[3rem] md:w-[4rem] ml-3 left-[16rem] md:left-[18rem] top-[3rem] md:top-[6.3rem]"
-                  />
-                </div>
-                <p className="m-0 p-2 md:text-xl text-slate-700 w-full md:max-w-[30rem] text-center lg:text-left  md:text ">
-                  Hi, I'm <span className="font-bold">Arkajyoti Kundu</span> . A
-                  passionate  Full-Stack  Developer based in Kolkata , India.
-                  📍
-                </p>
-                             
-                                   {/* contact icon list   */}
-
-                <div className=" flex flex-wrap p-3 gap-y-3 gap-x-7 my-5 justify-center md:justify-normal">
-                  <a
-                    href="https://www.linkedin.com/in/arkajyoti-kundu-784264242/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <CiLinkedin className="text-[35px] text-gray-900  hover:text-sky-700 cursor-pointer" />
-                  </a>
-
-                  {/* <RiLinkedinBoxLine  className="text-[35px] text-gray-900 " /> */}
-                  <a href="/contact" target="_blank" rel="noopener noreferrer">
-                    <FiGithub className="text-[30px] text-gray-900  hover:text-sky-700 cursor-pointer" />
-                  </a>
-                  <a
-                    href="arkajyotikundu415@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <MdOutlineMailLock className="text-[30px] text-gray-900  hover:text-sky-700 cursor-pointer" />
-                  </a>
-                </div>
+              {/* Social Icons */}
+              <div className="flex flex-wrap p-3 gap-y-3 gap-x-7 my-5 justify-center md:justify-normal">
+                <a href="https://www.linkedin.com/in/arkajyoti-kundu-784264242/" target="_blank" rel="noopener noreferrer">
+                  <CiLinkedin className="text-[35px] text-gray-900 hover:text-sky-700 cursor-pointer" />
+                </a>
+                <a href="/contact" target="_blank" rel="noopener noreferrer">
+                  <FiGithub className="text-[30px] text-gray-900 hover:text-sky-700 cursor-pointer" />
+                </a>
+                <a href="mailto:arkajyotikundu415@gmail.com" target="_blank" rel="noopener noreferrer">
+                  <MdOutlineMailLock className="text-[30px] text-gray-900 hover:text-sky-700 cursor-pointer" />
+                </a>
               </div>
             </div>
-
-            {/* profile picture section for  DeskTop screen  */}
-            <div className=" hidden   md:flex  flex-wrap      min-h-auto cursor-pointer ">
-               <ProfileImage/>
-           </div>
           </div>
-        </div>
-                              
-                              {/* this is Tech stack section  */}
 
-        <div className="md:absolute  md:-bottom-3   flex flex-wrap   w-full p-1 ">
-          <div className="flex flex-wrap  md:w-[80%] justify-center md:justify-normal items-center p-1 md:ml-[11rem]  ">
-            <span className="flex  justify-center  hover:text-red-600 cursor-pointer">
-              <p className="text-lg md:text-xl font-bold  transition-transform duration-300 ease-in-out hover:-translate-y-2.5 ">
-                Tech stack <span className="mx-2 md:mx-3 font-mono text-xl md:text-3xl">|</span>
-              </p>
-            </span>
-            <div className="flex flex-wrap flex-row justify-center p-1 mx-auto my-3 md:my-1 md:mx-3 px-3 w-full md:w-[80%]  ">
-              <ul className="flex flex-wrap flex-row justify-center px-1 gap-4 md:gap-x-4 mx-auto md:mx-3 my-1">
-                <li className="mx-1 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2.5">
-                  <Link>
-                    <img src="https://skillicons.dev/icons?i=c,cpp" />
-                  </Link>
-                </li>
-                <li className="mx-1 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2.5">
-                  <Link>
-                    <img src="https://skillicons.dev/icons?i=js,nodejs" />
-                  </Link>
-                </li>
-                <li className="mx-1 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2.5">
-                  <Link>
-                    <img src="https://skillicons.dev/icons?i=react,express" />
-                  </Link>
-                </li>
-                <li className="mx-1 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2.5">
-                  <Link>
-                    <img src="https://skillicons.dev/icons?i=mysql,mongodb" />
-                  </Link>
-                </li>
-                <li className="mx-1 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2.5">
-                  <Link>
-                    <img src="https://skillicons.dev/icons?i=html,css,tailwind" />
-                  </Link>
-                </li>  
-              </ul>
-            </div>
+          {/* 3D Avatar — single instance, responsive inside ProfileImage */}
+          <div className="w-full md:w-[35%] flex justify-center items-center">
+            <ProfileImage />
           </div>
+
         </div>
-        
       </div>
-    </>
+
+      {/* Tech Stack */}
+      <div className="md:absolute md:-bottom-3 flex flex-wrap w-full p-1">
+        <div className="flex flex-wrap md:w-[80%] justify-center md:justify-normal items-center p-1 md:ml-[11rem]">
+          <span className="flex justify-center hover:text-red-600 cursor-pointer">
+            <p className="text-lg md:text-xl font-bold transition-transform duration-300 ease-in-out hover:-translate-y-2.5">
+              Tech stack <span className="mx-2 md:mx-3 font-mono text-xl md:text-3xl">|</span>
+            </p>
+          </span>
+          <div className="flex flex-wrap flex-row justify-center p-1 mx-auto my-3 md:my-1 md:mx-3 px-3 w-full md:w-[80%]">
+            <ul className="flex flex-wrap flex-row justify-center px-1 gap-4 md:gap-x-4 mx-auto md:mx-3 my-1">
+              <li className="mx-1 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2.5">
+                <Link><img src="https://skillicons.dev/icons?i=c,cpp" /></Link>
+              </li>
+              <li className="mx-1 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2.5">
+                <Link><img src="https://skillicons.dev/icons?i=js,nodejs" /></Link>
+              </li>
+              <li className="mx-1 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2.5">
+                <Link><img src="https://skillicons.dev/icons?i=react,express" /></Link>
+              </li>
+              <li className="mx-1 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2.5">
+                <Link><img src="https://skillicons.dev/icons?i=mysql,mongodb" /></Link>
+              </li>
+              <li className="mx-1 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2.5">
+                <Link><img src="https://skillicons.dev/icons?i=html,css,tailwind" /></Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
   );
 };
 
